@@ -1,0 +1,11 @@
+.welcome {
+    background: url(../img/hotels/background-2.png) no-repeat ;
+    Width: 1200px;
+    height:  217px;
+}
+
+
+.container {
+    max-width: 1200px;
+    margin: auto;
+}
