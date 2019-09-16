@@ -10,18 +10,26 @@
 <body>
   <section class="container">
     <header>
-      <nav>
+      <nav class="navigation">
         <ul>
-          <li>Информация</li>
-          <li>Фото и видео</li>
-          <li>Карта штата</li>
-          <li><a href="hotels.html">Гостиницы </a></li>
+          <li class="nav_list"><a href="#">Информация</a></li>
+          <li class="nav_list"><a href="#">Фото и видео</a></li>
+          <li class="nav_list"><a href="#">Карта штата</a></li>
+          <li class="nav_list"><a href="hotels.html">Гостиницы </a></li>
         </ul>
-        <img src="img/index/logo.svg" alt="city of Arizona" width="140px" height="70px">
+        <a>
+          <img src="img/index/logo.svg" alt="Логотип сайта Город Аризона" width="140px" height="70px">
+        </a>
       </nav>
     </header>
 
     <div class="welcome">
+      <figure class="welcome_img">
+        <img src="img/index/welcome.png" width="459" height="353px">
+      </figure>
+      <figure class="welcome_polygon">
+        <img src="img/index/polygon.png" width="1202px" height="59px">
+      </figure>
     </div>
 
     <section class="info">
@@ -39,9 +47,9 @@
           <br>
           там течет своя жизнь</p>
       </div>
-      <div>
-        <img src="img/index/feature-picture@2x.jpg" alt="american flag" width="800px" height="256px">
-      </div>
+      <figure>
+        <img src="img/index/feature-picture@2x.jpg" alt="Американский фраг" width="800px" height="256px">
+      </figure>
     </section>
 
     <section class="recommendation">
@@ -117,28 +125,45 @@
     </section>
 
     <section class="map">
-      <img src="img/index/map@2x.png" width="1200px" height="475px">
+      <img src="img/index/map@2x.png" width="1200px" height="475px" alt="Карта города Аризона">
     </section>
 
     <section class="form">
       <h2>Поиск гостиницы в Седоне</h2>
-      <p>Дата заезда</p>
-      <p>Дата выезда</p>
-      <p>Взрослые</p>
-      <p>Дети</p>
-      <button type="button">Найти</button>
+      <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
+        <p>
+          <label for="check-in-date">Дата заезда</label>
+          <input id="check-in-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+        </p>
+        <p>
+          <label for="date-ofdeparture">Дата выезда</label>
+          <input id="date-ofdeparture" type="text" name="date" value="" placeholder="4 июля 2017"></p>
+        <span>Взрослые</span>
+        <div class="number">
+          <span class="minus">-</span>
+          <input type="text" value="1" size="5" />
+          <span class="plus">+</span>
+        </div>
+        <span>Дети</span>
+        <div class="number">
+          <span class="minus">-</span>
+          <input type="text" value="1" size="5" />
+          <span class="plus">+</span>
+        </div>
+        <button type="button">Найти</button>
+      </form>
     </section>
 
     <footer>
       <a href="#">#VisitSedona</a>
       <div class="social">
-        <img src="img/index/tw-icon.svg" width="17px" height="15px">
-        <img src="img/index/fb-icon.svg" width="12px" height="22px">
-        <img src="img/index/youtube-icon.svg" width="20px" height="16px">
+        <a href="#"><img src="img/index/tw-icon.svg" width="17px" height="15px" alt="группа сайта во Вконтакте"></a>
+        <a href="#"><img src="img/index/fb-icon.svg" width="12px" height="22px" alt="группа сайта в Фейсбуке"></a>
+        <a href="#"><img src="img/index/youtube-icon.svg" width="20px" height="16px" alt="канал сайта на Ютубе"></a>
       </div>
       <div class="footer_logo">
         <p>Website by</p>
-        <img class="img_logo" src="img/index/logo_name2.png" width="115px" height="41px">
+        <img class="img_logo" src="img/index/logo_name2.png" width="115px" height="41px" alt="Логотип сайта">
       </div>
     </footer>
   </section>
