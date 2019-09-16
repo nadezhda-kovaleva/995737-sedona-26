@@ -1,8 +1,23 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+figure {
+  margin: 0;
+  font-family: PT Sans;
+  text-transform: uppercase;
+}
+
 .welcome {
-  background: url(../img/index/background-photo.jpg) no-repeat;
+  background: url(../img/index/bckgr.jpg) no-repeat;
   Width: 1200px;
   height: 510px;
   position: relative;
+  background-color: black;
 }
 
 
@@ -26,22 +41,134 @@
   overflow: hidden;
 }
 
-.welcome_img {
-    text-align: center;
+.welcome_img img {
+  padding-top: 75px;
+  padding-left: 370px;
 }
 
-
-.welcome_polygon{
-    position: absolute;
-    bottom: -21px;
-    left: -41px;
+.welcome_polygon {
+  position: absolute;
+  bottom: -5px;
+  left: -1px;
 }
 
 .nav_list {
-list-style-type: none;
+  list-style-type: none;
 }
 
 .navigation a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
+
+.info h2 {
+  padding: 61px 380px 37px;
+  text-align: center;
+  font-size: 21px;
+  font-weight: bold;
+  width: 440px;
+  height: 48px;
+  line-height: 1.24;
+}
+
+.info p {
+  font-size: 14px;
+  font-weight: normal;
+  text-align: center;
+  color: #333333;
+  padding: 0px 355px 56px;
+}
+
+.real_city {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #81b3d2;
+  text-align: center;
+  height: 255px;
+  color: white;
+}
+
+.real_city_descriptions {
+  flex: 1 1 auto;
+  width: 400px;
+}
+
+.real_city_img {
+  flex: 2 1 auto;
+}
+
+.real_city_descriptions h2,
+.second_reason_descriptions h2,
+.reason_item h2 {
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.reason_number {
+  padding: 25px 0;
+  font-size: 14px;
+}
+
+.reason_text {
+  font-size: 14px;
+  color: #333333;
+}
+
+.recommendation {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.recommendation_item {
+  flex: 1 1 1;
+  padding-top: 60px;
+  padding-bottom: 83px;
+  text-align: center;
+}
+
+.recommendation_item h2 {
+  padding-top: 32px;
+  padding-bottom: 28px;
+  font-size: 21px;
+  font-weight: 700;
+}
+
+.recommendation_item p {
+  font-size: 14px;
+  color: #333333;
+}
+
+.second_reason {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  background-color: #81b3d2;
+  text-align: center;
+  height: 256px;
+  color: white;
+}
+
+.second_reason_descriptions {
+    flex: 1 1 auto;
+    width: 400px;
+  }
+  
+  .second_reason_img {
+    flex: 2 1 auto;
+  }
+
+  .other_reasons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #eeeeee;
+    text-align: center;
+    padding-top: 50px;
+    padding-bottom: 63px;
+  }
+
+  .reason_item h2 {
+    line-height: 1;
+  }
