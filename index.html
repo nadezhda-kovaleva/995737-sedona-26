@@ -3,6 +3,7 @@
 
 <head>
   <meta charset="utf-8">
+  <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
   <title>HTML Academy: Седона</title>
@@ -12,21 +13,21 @@
   <section class="container">
     <header>
       <nav class="navigation">
-        <ul>
-          <li class="nav_list"><a href="#">Информация</a></li>
-          <li class="nav_list"><a href="#">Фото и видео</a></li>
-          <li class="nav_list"><a href="#">Карта штата</a></li>
-          <li class="nav_list"><a href="hotels.html">Гостиницы </a></li>
+        <ul class="nav_menu">
+          <li class="nav_list_left"><a class="nav_link" href="#">Информация</a></li>
+          <li class="nav_list_left"><a class="nav_link" href="#">Фото и видео</a></li>
+          <li class="nav_list_right"><a class="nav_link" href="#">Карта штата</a></li>
+          <li class="nav_list_right"><a class="nav_link" href="hotels.html">Гостиницы </a></li>
         </ul>
         <a>
-          <img src="img/index/logo.svg" alt="Логотип сайта Город Аризона" width="140px" height="70px">
+          <img class="nav_logo" src="img/index/logo.svg" alt="Логотип сайта Город Аризона" width="140px" height="70px">
         </a>
       </nav>
     </header>
 
     <div class="welcome">
-      <figure class="welcome_img">
-        <img src="img/index/welcome.png" width="459" height="353px">
+      <figure>
+        <img class="welcome_img" src="img/index/welcome.png" width="459" height="353px">
       </figure>
       <figure class="welcome_polygon">
         <img src="img/index/polygon.png" width="1202px" height="59px">
@@ -34,14 +35,14 @@
     </div>
 
     <section class="info">
-      <h2>Седона — небольшой городок в Аризоне,
+      <h2 class="info_title">Седона — небольшой городок в Аризоне,
         заслуживающий большего!</h2>
-      <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+      <p class="info_text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
 
     <section class="real_city">
-      <div class="real_city_descriptions">
-        <h2>Настоящий
+      <div class="real_city_descr">
+        <h2 class="real_city_title">Настоящий
           <br> городок</h2>
         <p class="reason_number">- №1 -</p>
         <p class="reason_text">Седона-не аттракцион для туристов
@@ -49,29 +50,29 @@
           там течет своя жизнь</p>
       </div>
       <figure class="real_city_img">
-        <img src="img/index/feature-picture@2x.jpg" alt="Американский фраг" width="800px" height="256px">
+        <img src="img/index/feature-picture@2x.jpg" alt="Американский фраг" width="800px" height="257px">
       </figure>
     </section>
 
     <section class="recommendation">
-      <div class="recommendation_item">
+      <div class="recommend_item">
         <img src="img/index/icon-1.svg" width="75px" height="72px">
-        <h2>Жильё</h2>
-        <p>Рекомендуем пожить в настоящем
+        <h2 class="recommend_title">Жильё</h2>
+        <p class="recommend_text">Рекомендуем пожить в настоящем
           <br>
           мотеле, как в кино!</p>
       </div>
-      <div class="recommendation_item">
+      <div class="recommend_item">
         <img src="img/index/icon-3.svg" width="74px" height="70px">
-        <h2>Еда</h2>
-        <p>Всегда заказывайте фирменный бургер,
+        <h2 class="recommend_title">Еда</h2>
+        <p class="recommend_text">Всегда заказывайте фирменный бургер,
           <br>
           вы не разочаруетесь!</p>
       </div>
-      <div class="recommendation_item">
+      <div class="recommend_item">
         <img src="img/index/icon-2.svg" width="64px" height="76px">
-        <h2>Сувениры</h2>
-        <p>Не только китайского, но и местного
+        <h2 class="recommend_title">Сувениры</h2>
+        <p class="recommend_text">Не только китайского, но и местного
           <br>
           производства!</p>
       </div>
@@ -79,10 +80,10 @@
 
     <section class="second_reason">
       <figure class="second_reason_img">
-        <img src="img/index/layer-5@2x.jpg" alt="Grand Canyon" width="800px" height="256px">
+        <img src="img/index/layer-5@2x.jpg" alt="Grand Canyon" width="800px" height="255px">
       </figure>
-      <div class="second_reason_descriptions">
-        <h2>Там есть
+      <div class="second_reason_descr">
+        <h2 class="second_reason_title">Там есть
           <br> мост дьявола</h2>
         <p class="reason_number">- №2 - </p>
         <p class="reason_text">Да, по нему можно пройти! Если конечно
@@ -93,21 +94,21 @@
 
     <section class="other_reasons">
       <div class="reason_item">
-        <h2>Небольшая <br> площадь</h2>
+        <h2 class="reason_title">Небольшая <br> площадь</h2>
         <p class="reason_number">- №3 -</p>
         <p class="reason_text">Все достопримечательности
           <br>
           находятся очень близко</p>
       </div>
       <div class="reason_item">
-        <h2>Красивая <br> дорога</h2>
+        <h2 class="reason_title">Красивая <br> дорога</h2>
         <p class="reason_number">- №4 -</p>
         <p class="reason_text">Ехать в Седону из Лас-Вегаса совсем
           <br>
           не скучно!</p>
       </div>
       <div class="reason_item">
-        <h2>Мало <br> туристов</h2>
+        <h2 class="reason_title">Мало <br> туристов</h2>
         <p class="reason_number">- №5 -</p>
         <p class="reason_text">Большинство едет в Гранд-Каньон
           <br>
@@ -116,10 +117,10 @@
     </section>
 
     <section class="search">
-      <h2>
+      <h2 class="search_title">
         Заинтересовались?
       </h2>
-      <p>
+      <p class="search_text">
         Укажите предполагаемые даты поездки, <br>
         И мы покажем вам лучшие предложения гостиниц в Седоне
       </p>
@@ -130,15 +131,18 @@
     </section>
 
     <section class="form">
-      <h2>Поиск гостиницы в Седоне</h2>
-      <form class="visually-hidden" action="https://echo.htmlacademy.ru" method="post">
-        <p>
-          <label for="check-in-date">Дата заезда</label>
-          <input id="check-in-date" type="text" name="date" value="" placeholder="24 апреля 2017">
+      <input type="button" class="form_buttom" value="Поиск гостиницы в Седоне">
+      <form class="visually-hidde form_main" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form_date">
+          <label for="check_in_date">Дата заезда</label>
+          <input id="check_in_date" type="text" name="date" value="" placeholder="24 апреля 2017">
+          <img class="calendar_img" src="img/index/calendar.svg" width="21px" height="22px">
         </p>
-        <p>
-          <label for="date-ofdeparture">Дата выезда</label>
-          <input id="date-ofdeparture" type="text" name="date" value="" placeholder="4 июля 2017"></p>
+        <p class="form_departure">
+          <label for="date-of_departure">Дата выезда</label>
+          <input id="date_of_departure" type="text" name="date" value="" placeholder="4 июля 2017">
+        <img class="calendar_img_2" src="img/index/calendar.svg" width="21px" height="22px">
+      </p>
         <span>Взрослые</span>
         <div class="number">
           <span class="minus">-</span>
@@ -151,20 +155,24 @@
           <input type="text" value="1" size="5" />
           <span class="plus">+</span>
         </div>
-        <button type="button">Найти</button>
+        <input type="button" class="button_search" value="Найти">
       </form>
     </section>
 
     <footer>
-      <a href="#">#VisitSedona</a>
+      <a class="footer_link" href="#">#VisitSedona</a>
       <div class="social">
-        <a href="#"><img src="img/index/tw-icon.svg" width="17px" height="15px" alt="группа сайта во Вконтакте"></a>
-        <a href="#"><img src="img/index/fb-icon.svg" width="12px" height="22px" alt="группа сайта в Фейсбуке"></a>
-        <a href="#"><img src="img/index/youtube-icon.svg" width="20px" height="16px" alt="канал сайта на Ютубе"></a>
+        <a href="#"><img class="social_img" src="img/index/tw-icon.svg" width="17px" height="15px"
+            alt="группа сайта во Вконтакте"></a>
+        <a href="#"><img class="social_img" src="img/index/fb-icon.svg" width="12px" height="22px"
+            alt="группа сайта в Фейсбуке"></a>
+        <a href="#"><img class="social_img" src="img/index/youtube-icon.svg" width="20px" height="16px"
+            alt="канал сайта на Ютубе"></a>
       </div>
       <div class="footer_logo">
-        <p>Website by</p>
-        <img class="img_logo" src="img/index/logo_name2.png" width="115px" height="41px" alt="Логотип сайта">
+        <span class= "footer_web">Website by</span>
+        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="img_logo" src="img/index/logo_name2.png"
+            width="115px" height="41px" alt="Логотип сайта"></a>
       </div>
     </footer>
   </section>
