@@ -20,7 +20,7 @@
    * Remove the margin in all browsers.
    */
   
-  body, figure, h1, h2, h3, h4, p, ::after, ::before, ul, li, button, footer {
+  body, figure, h1, h2, h3, h4, p, ::after, ::before, ul, li, button, footer, input, label {
     margin: 0;
     padding: 0;
   }

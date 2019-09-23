@@ -6,6 +6,7 @@
   <link href="css/normalize.css" rel="stylesheet">
   <link href="css/style.css" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css?family=PT+Sans:400,700&display=swap&subset=cyrillic" rel="stylesheet">
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css">
   <title>HTML Academy: Седона</title>
 </head>
 
@@ -14,10 +15,10 @@
     <header>
       <nav class="navigation">
         <ul class="nav_menu">
-          <li class="nav_list_left"><a class="nav_link" href="#">Информация</a></li>
-          <li class="nav_list_left"><a class="nav_link" href="#">Фото и видео</a></li>
-          <li class="nav_list_right"><a class="nav_link" href="#">Карта штата</a></li>
-          <li class="nav_list_right"><a class="nav_link" href="hotels.html">Гостиницы </a></li>
+          <li class="nav_list_left"><a class="nav_link nav_link_first" href="#">Информация</a></li>
+          <li class="nav_list_left"><a class="nav_link nav_link_second" href="#">Фото и видео</a></li>
+          <li class="nav_list_right"><a class="nav_link nav_link_third" href="#">Карта штата</a></li>
+          <li class="nav_list_right"><a class="nav_link  nav_link_fourth" href="hotels.html">Гостиницы </a></li>
         </ul>
         <a>
           <img class="nav_logo" src="img/index/logo.svg" alt="Логотип сайта Город Аризона" width="140px" height="70px">
@@ -30,13 +31,14 @@
         <img class="welcome_img" src="img/index/welcome.png" width="459" height="353px">
       </figure>
       <figure class="welcome_polygon">
-        <img src="img/index/polygon.png" width="1202px" height="59px">
+        <img src="img/index/polygon.png" width="1200" height="60px">
       </figure>
     </div>
 
     <section class="info">
       <h2 class="info_title">Седона — небольшой городок в Аризоне,
-        заслуживающий большего!</h2>
+        заслуживающий большего!
+      </h2>
       <p class="info_text">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
     </section>
 
@@ -44,8 +46,8 @@
       <div class="real_city_descr">
         <h2 class="real_city_title">Настоящий
           <br> городок</h2>
-        <p class="reason_number">- №1 -</p>
-        <p class="reason_text">Седона-не аттракцион для туристов
+        <p class="reason_number">— №1 —</p>
+        <p class="reason_text">Седона — не аттракцион для туристов,
           <br>
           там течет своя жизнь</p>
       </div>
@@ -56,25 +58,28 @@
 
     <section class="recommendation">
       <div class="recommend_item">
-        <img src="img/index/icon-1.svg" width="75px" height="72px">
-        <h2 class="recommend_title">Жильё</h2>
-        <p class="recommend_text">Рекомендуем пожить в настоящем
+        <img class="recommend_first_img" src="img/index/icon-1.svg" width="75px" height="72px">
+        <h2 class="recommend_title recommend_title_first">Жильё</h2>
+        <div class="recommend_text recommend_text_first">Рекомендуем пожить в настоящем
           <br>
-          мотеле, как в кино!</p>
+          мотеле, всё как в кино!
+        </div>
       </div>
       <div class="recommend_item">
-        <img src="img/index/icon-3.svg" width="74px" height="70px">
-        <h2 class="recommend_title">Еда</h2>
-        <p class="recommend_text">Всегда заказывайте фирменный бургер,
+        <img class="recommend_second_img" src="img/index/icon-3.svg" width="74px" height="70px">
+        <h2 class="recommend_title recommend_title_second">Еда</h2>
+        <p class="recommend_text recommend_text_second">Всегда заказывайте фирменный бургер,
           <br>
-          вы не разочаруетесь!</p>
+          вы не разочаруетесь!
+        </p>
       </div>
       <div class="recommend_item">
-        <img src="img/index/icon-2.svg" width="64px" height="76px">
-        <h2 class="recommend_title">Сувениры</h2>
+        <img class="recommend_third_img" src="img/index/icon-2.svg" width="64px" height="76px">
+        <h2 class="recommend_title recommend_title_third">Сувениры</h2>
         <p class="recommend_text">Не только китайского, но и местного
           <br>
-          производства!</p>
+          производства!
+        </p>
       </div>
     </section>
 
@@ -85,7 +90,7 @@
       <div class="second_reason_descr">
         <h2 class="second_reason_title">Там есть
           <br> мост дьявола</h2>
-        <p class="reason_number">- №2 - </p>
+        <p class="reason_number">— №2 —</p>
         <p class="reason_text">Да, по нему можно пройти! Если конечно
           <br>
           вы осмелитесь</p>
@@ -94,22 +99,22 @@
 
     <section class="other_reasons">
       <div class="reason_item">
-        <h2 class="reason_title">Небольшая <br> площадь</h2>
-        <p class="reason_number">- №3 -</p>
-        <p class="reason_text">Все достопримечательности
+        <h2 class="reason_title reason_title_first">Небольшая <br> площадь</h2>
+        <p class="reason_number reason_number_first">— №3 —</p>
+        <p class="reason_text reason_text_first">Все достопримечательности
           <br>
           находятся очень близко</p>
       </div>
-      <div class="reason_item">
+      <div class="reason_item reason_item_second">
         <h2 class="reason_title">Красивая <br> дорога</h2>
-        <p class="reason_number">- №4 -</p>
+        <p class="reason_number">— №4 —</p>
         <p class="reason_text">Ехать в Седону из Лас-Вегаса совсем
           <br>
           не скучно!</p>
       </div>
       <div class="reason_item">
         <h2 class="reason_title">Мало <br> туристов</h2>
-        <p class="reason_number">- №5 -</p>
+        <p class="reason_number">— №5 —</p>
         <p class="reason_text">Большинство едет в Гранд-Каньон
           <br>
           и толпится там</p>
@@ -127,54 +132,67 @@
     </section>
 
     <section class="map">
-      <img src="img/index/map@2x.png" width="1200px" height="475px" alt="Карта города Аризона">
+      <img src="img/index/map@2x.png" width="1200px" height="595px" alt="Карта города Аризона">
     </section>
 
-    <section class="form">
-      <input type="button" class="form_buttom" value="Поиск гостиницы в Седоне">
-      <form class="visually-hidde form_main" action="https://echo.htmlacademy.ru" method="post">
-        <p class="form_date">
-          <label for="check_in_date">Дата заезда</label>
-          <input id="check_in_date" type="text" name="date" value="" placeholder="24 апреля 2017">
-          <img class="calendar_img" src="img/index/calendar.svg" width="21px" height="22px">
-        </p>
-        <p class="form_departure">
-          <label for="date-of_departure">Дата выезда</label>
-          <input id="date_of_departure" type="text" name="date" value="" placeholder="4 июля 2017">
-        <img class="calendar_img_2" src="img/index/calendar.svg" width="21px" height="22px">
-      </p>
-        <span>Взрослые</span>
-        <div class="number">
-          <span class="minus">-</span>
-          <input type="text" value="1" size="5" />
-          <span class="plus">+</span>
-        </div>
-        <span>Дети</span>
-        <div class="number">
-          <span class="minus">-</span>
-          <input type="text" value="1" size="5" />
-          <span class="plus">+</span>
-        </div>
-        <input type="button" class="button_search" value="Найти">
-      </form>
-    </section>
 
     <footer>
       <a class="footer_link" href="#">#VisitSedona</a>
       <div class="social">
-        <a href="#"><img class="social_img" src="img/index/tw-icon.svg" width="17px" height="15px"
-            alt="группа сайта во Вконтакте"></a>
-        <a href="#"><img class="social_img" src="img/index/fb-icon.svg" width="12px" height="22px"
-            alt="группа сайта в Фейсбуке"></a>
-        <a href="#"><img class="social_img" src="img/index/youtube-icon.svg" width="20px" height="16px"
-            alt="канал сайта на Ютубе"></a>
+        <div class="social_link link_tw">
+          <a class="social_img" href="#"><img src="img/index/tw-icon.svg" width="17px" height="15px"
+              alt="страница сайта в Твиттере"></a>
+        </div>
+        <div class="social_link link_fb">
+          <a class="social_img" href="#"><img src="img/index/fb-icon.svg" width="12px" height="22px"
+              alt="группа сайта в Фейсбуке"></a>
+        </div>
+        <div class="social_link link_youtobe">
+          <a class="social_img" href="#"><img src="img/index/youtube-icon.svg" width="20px" height="16px"
+              alt="канал сайта на Ютубе"></a>
+        </div>
       </div>
       <div class="footer_logo">
-        <span class= "footer_web">Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="img_logo" src="img/index/logo_name2.png"
-            width="115px" height="41px" alt="Логотип сайта"></a>
+        <span class="footer_web">Website by</span>
+        <figure class="footer_logo_img">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="img_logo" src="img/index/logo_name2.png"
+              width="115px" height="41px" alt="Логотип сайта"></a>
+        </figure>
       </div>
     </footer>
+
+
+    <section class="form">
+      <button type="button" class="form_button">Поиск гостиницы в Седоне
+      </button>
+      <form class="visually-hidde form_main" action="https://echo.htmlacademy.ru" method="post">
+        <p class="form_date">
+          <label class="label_check_in_date" for="check_in_date">Дата заезда:</label>
+          <input id="check_in_date" type="text" name="date" value="" placeholder="24 апреля 2017">
+          <img class="calendar_img" src="img/index/calendar.svg" width="21px" height="22px">
+        </p>
+        <p class="form_departure">
+          <label class="label_departure" for="date-of_departure">Дата выезда:</label>
+          <input id="date_of_departure" type="text" name="date" value="" placeholder="4 июля 2017">
+          <img class="calendar_img" src="img/index/calendar.svg" width="21px" height="22px">
+        </p>
+        <div class="number_of_peoples">
+          <span class="age adults">Взрослые</span>
+          <div class="number">
+            <button type="button" class="minus"><i class="fas fa-minus"></i></button>
+            <input class="input_number" type="text" value="2" size="5" />
+            <button type="button" class="plus"><i class="fas fa-plus"></i></button>
+          </div>
+          <span class="age children">Дети</span>
+          <div class="number">
+            <button type="button" class="minus"><i class="fas fa-minus"></i></button>
+            <input class="input_number" type="text" value="0" size="5" />
+            <button type="button" class="plus"><i class="fas fa-plus"></i></button>
+          </div>
+        </div>
+        <button type="button" class="button_search">Найти</button>
+      </form>
+    </section>
   </section>
 </body>
 

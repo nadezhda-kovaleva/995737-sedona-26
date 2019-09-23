@@ -5,9 +5,13 @@ body {
   font-size: 14px;
 }
 
+img {
+  max-width: 100%;
+}
+
 .welcome {
   background: black url(../img/index/bckgr.jpg) no-repeat;
-  Width: 1200px;
+  max-width:1200px;
   height: 510px;
   position: relative;
 }
@@ -16,10 +20,6 @@ body {
   max-width: 1200px;
   margin: auto;
   box-shadow: 0px 5px 15px 0 rgba(0, 1, 1, 0.2);
-}
-
-.social_img {
-  background-color: #81b3d2;
 }
 
 .visually-hidden {
@@ -41,21 +41,20 @@ body {
 .welcome_polygon {
   position: absolute;
   bottom: -4px;
-  left: -1px;
 }
 
 .nav_list_right {
   margin-right: auto;
   padding-top: 20px;
   padding-bottom: 20px;
-  width: 239px;
+  width: 240px;
   align-self: center;
   text-align: center;
 }
 
 .nav_list_left {
   margin-left: auto;
-  width: 239px;
+  width: 240px;
   align-self: center;
   text-align: center;
   padding-top: 20px;
@@ -73,12 +72,29 @@ body {
   display: -webkit-flex;
   display: flex;
   list-style-type: none;
+  flex-wrap: wrap;
 }
 
 .nav_menu::after {
   content: '';
   flex-grow: 1;
   order: 0;
+}
+
+.nav_link_first {
+  padding-right: 3px;
+}
+
+.nav_link_second {
+  padding-left: 3px;
+}
+
+.nav_link_third {
+  padding-left: 3px;
+}
+
+.nav_link_fourth {
+  padding-left: 17px;
 }
 
 .nav_list_right {
@@ -88,7 +104,7 @@ body {
 .nav_logo {
   position: absolute;
   z-index: 1;
-  right: 528px;
+  right: 530px;
   top: 0px;
 }
 
@@ -98,12 +114,11 @@ body {
 }
 
 .info_title {
-  padding: 61px 380px 37px;
+  padding: 58px 380px 32px;
   text-align: center;
   font-size: 21px;
   font-weight: bold;
   width: 440px;
-  height: 48px;
   line-height: 1.24;
 }
 
@@ -115,7 +130,7 @@ body {
   font-weight: normal;
   text-align: center;
   color: #333333;
-  padding: 0px 355px 56px;
+  padding-bottom: 56px;
 }
 
 .real_city {
@@ -124,8 +139,9 @@ body {
   justify-content: space-around;
   background-color: #81b3d2;
   text-align: center;
-  height: 255px;
+  max-height: 255px;
   color: white;
+  flex-wrap: wrap;
 }
 
 .real_city_descr {
@@ -144,12 +160,23 @@ body {
   font-weight: 700;
 }
 
+.real_city_title {
+  margin-top: -14px;
+  line-height: 1;
+}
+
 .reason_number {
   padding: 25px 0;
 }
 
 .reason_text {
   color: #333333;
+  line-height: 1.45;
+}
+
+.reason_text_first {
+  padding-left: 20px;
+  margin-right: -20px;
 }
 
 .recommendation {
@@ -157,6 +184,7 @@ body {
   align-items: center;
   justify-content: space-around;
   background-color: #ffffff;
+  flex-wrap: wrap;
 }
 
 .recommend_item {
@@ -167,14 +195,47 @@ body {
 }
 
 .recommend_title {
-  padding-top: 32px;
-  padding-bottom: 28px;
+  padding-top: 24px;
+  padding-bottom: 24px;
   font-size: 21px;
   font-weight: 700;
 }
 
+.recommend_title_first {
+  padding-top: 25px;
+}
+
 .recommend_text {
   color: #333333;
+  line-height: 1.45;
+}
+
+.recommend_text_first {
+  padding-left: 8px;
+  margin-right: -8px;
+}
+
+.recommend_text_second {
+  padding-left: 9px;
+  margin-right: -9px;
+}
+
+.recommend_first_img,
+.recommend_title_first {
+  padding-left: 15px;
+}
+
+.recommend_second_img {
+  padding-left: 20px;
+}
+
+.recommend_title_second {
+  padding-left: 20px;
+  padding-top: 25px;
+}
+
+.recommend_third_img {
+  margin-top: -3px;
 }
 
 .second_reason {
@@ -183,13 +244,19 @@ body {
   justify-content: space-around;
   background-color: #81b3d2;
   text-align: center;
-  height: 255px;
+  max-height: 255px;
   color: white;
+  flex-wrap: wrap;
 }
 
 .second_reason_descr {
   flex: 1 1 auto;
   width: 400px;
+}
+
+.second_reason_title {
+  margin-top: -15px;
+  line-height: 21px;
 }
 
 .second_reason_img {
@@ -202,12 +269,26 @@ body {
   justify-content: space-around;
   background-color: #eeeeee;
   text-align: center;
-  padding-top: 50px;
+  padding-top: 48px;
   padding-bottom: 63px;
+  flex-wrap: wrap;
 }
 
 .reason_title {
   line-height: 1;
+}
+
+.reason_title_first {
+  margin-left: 43px;
+}
+
+.reason_number_first {
+  padding: 26px 0px 24px 43px;
+}
+
+
+.reason_item_second {
+  padding-left: 40px;
 }
 
 .search {
@@ -223,7 +304,7 @@ body {
 }
 
 .search_text {
-  line-height: 1.24;
+  line-height: 1.65;
   padding-bottom: 135px;
 }
 
@@ -233,11 +314,15 @@ body {
   margin: auto;
   font-weight: 700;
   z-index: 1;
+  position: absolute;
+  top: 2083px;
+  left: 391px;
 }
 
 .form_main {
   background-color: #ffffff;
-  padding: 55px;
+  padding: 54px 55px 55px;
+  box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
 }
 
 .form_date {
@@ -246,38 +331,39 @@ body {
 
 .calendar_img {
   position: absolute;
-  right: 25px;
-  top: 10px;
+  right: 9px;
+  top: 8px;
   color: #a9a9a9;
 }
 
-.form_buttom {
+.number {
+  display: flex;
+  height: 38px;
+  flex: 1 1 auto;
+}
+
+.form_button {
   background-color: #766357;
   color: #ffffff;
   text-transform: uppercase;
   font-size: 21px;
-  padding-top: 31px;
-  padding-bottom: 31px;
+  padding-top: 29px;
+  padding-bottom: 30px;
   width: 568px;
+  font-weight: 700;
 }
 
 .form_departure {
   position: relative;
 }
 
-.calendar_img_2 {
-  position: absolute;
-  right: 25px;
-  top: 10px;
-  color: #a9a9a9;
-}
 
 #check_in_date,
 #date_of_departure {
-  width: 345px;
+  width: 344px;
   background-color: #f2f2f2;
   height: 38px;
-  margin-bottom: 30px;
+  margin-bottom: 29px;
 }
 
 .button_search {
@@ -285,41 +371,79 @@ body {
   font-size: 21px;
   color: #ffffff;
   width: 458px;
-  height: 58px;
+  height: 54px;
   text-transform: uppercase;
   font-weight: 700;
+  margin-top: 56px;
+  border: 0;
 }
 
-input[type=button] {
-  border: none;
+input {
+  border: 0;
 }
 
-input[type="text"]::-webkit-input-placeholder { 
+input[type="text"]::-webkit-input-placeholder {
   text-transform: uppercase;
-  color: #000000; 
-  font-weight: 700;
-  padding-left: 13px;
-}
-
-input[type="text"]:-ms-input-placeholder { 
-  text-transform: uppercase;
-  color: #000000; 
+  color: #000000;
   font-weight: 700;
   padding-left: 13px;
 }
 
-input[type="text"]::-ms-input-placeholder { 
+input[type="text"]:-ms-input-placeholder {
   text-transform: uppercase;
+  color: #000000;
   font-weight: 700;
-  color: #000000; 
   padding-left: 13px;
 }
 
-input[type="text"]::placeholder { 
+input[type="text"]::-ms-input-placeholder {
   text-transform: uppercase;
-  color: #000000; 
+  font-weight: 700;
+  color: #000000;
+  padding-left: 13px;
+}
+
+input[type="text"]::placeholder {
+  text-transform: uppercase;
+  color: #000000;
   font-weight: 700;
   padding-left: 13px;
+}
+
+.label_check_in_date {
+  padding-right: 20px;
+}
+
+.label_departure{
+  padding-right: 12px;
+}
+
+.number_of_peoples {
+  display: flex;
+  padding-top: 1px;
+  width: 114px;
+}
+
+.input_number,
+.minus, .plus {
+  width: 38px;
+  border: 0;
+  text-align: center;
+  font-weight: 700;
+  background-color: #f2f2f2;
+}
+
+.age {
+  margin: auto;
+}
+
+.adults {
+  padding-right: 43px;
+}
+
+.children {
+  margin-left: 54px;
+  padding-right: 31px;
 }
 
 .map {
@@ -327,28 +451,55 @@ input[type="text"]::placeholder {
 }
 
 footer {
-  height: 120px;
   opacity: 0.9;
   background-color: #ffffff;
-  position: absolute;
-  width: 1200px;
-  bottom: -2279px;
+  display: flex;
+  margin-top: -125px;
+  flex-wrap: wrap;
 }
 
 .footer_link {
-font-size: 21px;
-padding: 50px 255px 50px 132px;
+  font-size: 21px;
+  padding: 47px 257px 50px 132px;
 }
 
-footer {
-  display:flex;
+.footer_web {
+  padding-right: 8px;
 }
 
 .footer_logo {
-  padding-right: 100px;
+  display: flex;
+  padding-left: 222px;
+  padding-top: 50px;
+  flex-wrap: wrap;
 }
 
-.img_logo {
-
+.footer_logo_img {
+  margin-top: -12px;
 }
 
+.social {
+  padding-top: 35px;
+  display: flex;
+  height: 48px; 
+  flex-wrap: wrap;
+}
+
+.social_link {
+  background-color: #81b3d2;
+  margin-right: 6px;
+  width: 46px;
+  text-align: center;
+}
+
+.link_tw {
+  padding-top: 17px;
+}
+
+.link_youtobe {
+padding-top: 16px;
+}
+
+.link_fb {
+  padding-top: 13px;
+}

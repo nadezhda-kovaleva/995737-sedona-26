@@ -12,11 +12,11 @@
   <section class="container">
     <header>
       <nav class="navigation">
-        <ul>
-          <li class="nav_list"><a class="nav_link" href="#">Информация</a></li>
-          <li class="nav_list"><a class="nav_link" href="#">Фото и видео</a></li>
-          <li class="nav_list"><a class="nav_link" href="#">Карта штата</a></li>
-          <li class="nav_list"><a class="nav_link" href="hotels.html">Гостиницы </a></li>
+        <ul class="nav_menu">
+          <li class="nav_list_left"><a class="nav_link nav_link_first" href="#">Информация</a></li>
+          <li class="nav_list_left"><a class="nav_link nav_link_second" href="#">Фото и видео</a></li>
+          <li class="nav_list_right"><a class="nav_link nav_link_third" href="#">Карта штата</a></li>
+          <li class="nav_list_right"><a class="nav_link  nav_link_fourth" href="hotels.html">Гостиницы </a></li>
         </ul>
         <a>
           <img class="nav_logo" src="img/index/logo.svg" alt="Логотип сайта Город Аризона" width="140px" height="70px">
@@ -121,15 +121,27 @@
       </section>
     </section>
     <footer>
-      <a href="#">#VisitSedona</a>
+      <a class="footer_link" href="#">#VisitSedona</a>
       <div class="social">
-        <a href="#"><img src="img/index/tw-icon.svg" width="17px" height="15px" alt="группа сайта во Вконтакте"></a>
-        <a href="#"><img src="img/index/fb-icon.svg" width="12px" height="22px" alt="группа сайта в Фейсбуке"></a>
-        <a href="#"><img src="img/index/youtube-icon.svg" width="20px" height="16px" alt="канал сайта на Ютубе"></a>
+        <div class="social_link link_tw">
+          <a class="social_img" href="#"><img src="img/index/tw-icon.svg" width="17px" height="15px"
+              alt="страница сайта в Твиттере"></a>
+        </div>
+        <div class="social_link link_fb">
+          <a class="social_img" href="#"><img src="img/index/fb-icon.svg" width="12px" height="22px"
+              alt="группа сайта в Фейсбуке"></a>
+        </div>
+        <div class="social_link link_youtobe">
+          <a class="social_img" href="#"><img src="img/index/youtube-icon.svg" width="20px" height="16px"
+              alt="канал сайта на Ютубе"></a>
+        </div>
       </div>
       <div class="footer_logo">
-        <p>Website by</p>
-        <img class="img_logo" src="img/index/logo_name2.png" width="115px" height="41px" alt="Логотип сайта">
+        <span class="footer_web">Website by</span>
+        <figure class="footer_logo_img">
+          <a href="https://htmlacademy.ru/intensive/htmlcss"><img class="img_logo" src="img/index/logo_name2.png"
+              width="115px" height="41px" alt="Логотип сайта"></a>
+        </figure>
       </div>
     </footer>
   </section>
